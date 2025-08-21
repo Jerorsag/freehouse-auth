@@ -3,6 +3,10 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
+    # Project
+    PROJECT_NAME: str = "Freehouse API"
+    VERSION: str = "0.1.0"
+
     # Database
     DATABASE_URL: str
 
